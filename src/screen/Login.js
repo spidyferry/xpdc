@@ -15,7 +15,7 @@ import Theme from '../../style/Theme';
 const bg = require('../../assets/img/xpdc_bg.png');
 const logo = require('../../assets/img/logo-fix-white.png');
 
-const Login = () => {
+const Login = ({navigation}) => {
   const [hidePassword, setHidePassword] = useState(true);
   return (
     <View style={Theme.loginPage}>
@@ -63,7 +63,7 @@ const Login = () => {
               </View>
               <Text
                 style={[styles.marginedText, Theme.hyperlink]}
-                onPress={() => Alert.alert('Pressed')}>
+                onPress={() => navigation.navigate('Home')}>
                 Lupa kata sandi?
               </Text>
               <Text style={[Theme.textWhite, styles.margin40]}>
