@@ -18,25 +18,25 @@ const logo = require('../../assets/img/logo-fix-white.png');
 const Login = ({navigation}) => {
   const [hidePassword, setHidePassword] = useState(true);
   return (
-    <View style={Theme.loginPage}>
+    <View style={Theme.displayFlex}>
       <ImageBackground
         source={bg}
         resizeMode="cover"
         style={Theme.loginPageBgImage}>
         <View style={Theme.loginPageHeader}>
-          <Image source={logo} style={Theme.loginPageLogo} />
+          <Image source={logo} style={Theme.mainLogo} />
           <Text style={[Theme.textWhite, styles.marginedText]}>
             Login untuk melanjutkan
           </Text>
         </View>
         <View style={Theme.loginPageBody}>
           <View style={styles.margin40}>
-            <View style={Theme.loginPageForm}>
+            <View style={Theme.center}>
               <View style={Theme.textInputContainer}>
                 <View style={Theme.textInputIcon}>
                   <Icon name="email" size={20} />
                 </View>
-                <TextInput style={Theme.textInput} />
+                <TextInput style={Theme.textInput} placeholder="E-mail" />
               </View>
               <View style={Theme.textInputContainer}>
                 <View style={Theme.textInputIcon}>
@@ -45,6 +45,7 @@ const Login = ({navigation}) => {
                 <TextInput
                   secureTextEntry={hidePassword ? true : false}
                   style={Theme.textInputDoubleIcon}
+                  placeholder="Kata Sandi"
                 />
                 <View style={Theme.textInputIcon}>
                   <Icon
@@ -70,7 +71,7 @@ const Login = ({navigation}) => {
                 Tidak memiliki akun?{' '}
                 <Text
                   style={[styles.marginedText, Theme.hyperlink]}
-                  onPress={() => Alert.alert('Pressed')}>
+                  onPress={() => navigation.navigate('SignUp')}>
                   Daftar disini
                 </Text>
               </Text>

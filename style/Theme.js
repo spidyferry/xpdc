@@ -1,15 +1,18 @@
 import {PixelRatio, StyleSheet} from 'react-native';
 
 const Theme = StyleSheet.create({
-  loginPage: {
+  displayFlex: {
     flex: 1,
   },
-  loginPageLogo: {
+  center: {
+    alignItems: 'center',
+  },
+  midle: {
+    justifyContent: 'center',
+  },
+  mainLogo: {
     width: PixelRatio.getPixelSizeForLayoutSize(101),
     height: PixelRatio.getPixelSizeForLayoutSize(33),
-  },
-  loginPageForm: {
-    alignItems: 'center',
   },
   loginPageHeader: {
     flex: 7,
@@ -27,6 +30,15 @@ const Theme = StyleSheet.create({
   loginPageBgImage: {
     flex: 1,
     justifyContent: 'center',
+  },
+  signUpPageHeader: {
+    flex: 6,
+  },
+  signUpPageBody: {
+    flex: 8,
+  },
+  signUpPageFooter: {
+    flex: 1,
   },
   textInputContainer: {
     display: 'flex',
@@ -76,6 +88,9 @@ const Theme = StyleSheet.create({
   },
   textWhite: {
     color: 'white',
+  },
+  marginTop40: {
+    marginTop: 40,
   },
 });
 
