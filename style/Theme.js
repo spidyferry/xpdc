@@ -83,6 +83,21 @@ const Theme = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+  defaultButtonDisable: {
+    backgroundColor: '#cfcfcf',
+    width: PixelRatio.getPixelSizeForLayoutSize(80),
+    height: PixelRatio.getPixelSizeForLayoutSize(20),
+    margin: 10,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  defaultTextButtonDisable: {
+    alignItems: 'center',
+    color: '#afafaf',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
   hyperlink: {
     color: 'skyblue',
   },
