@@ -21,7 +21,9 @@ const ForgotPassword = () => {
         <Image source={logo} style={Theme.mainLogo} />
       </View>
       <View style={[Theme.signUpPageBody, Theme.center]}>
-        <Text>Masukkan email anda untuk reset kata sandi:</Text>
+        <View style={Theme.textContainer}>
+          <Text>Masukkan email anda untuk reset kata sandi:</Text>
+        </View>
         <View style={[Theme.textInputContainer, Theme.marginTop40]}>
           <View style={Theme.textInputIcon}>
             <Icon name="email" size={20} />
@@ -36,7 +38,11 @@ const ForgotPassword = () => {
             }
           />
         </View>
-        <Text>Reset link akan dikirimkan ke email anda.</Text>
+        <View style={Theme.textContainer}>
+          <Text style={Theme.smallNote}>
+            * Reset link akan dikirimkan ke email anda.
+          </Text>
+        </View>
         <TouchableOpacity
           style={
             disableButton

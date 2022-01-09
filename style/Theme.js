@@ -7,8 +7,8 @@ const Theme = StyleSheet.create({
   center: {
     alignItems: 'center',
   },
-  left: {
-    textAlign: 'left',
+  smallNote: {
+    fontSize: 12,
   },
   midle: {
     justifyContent: 'center',
@@ -51,6 +51,11 @@ const Theme = StyleSheet.create({
     height: 40,
     width: '80%',
     margin: 10,
+  },
+  textContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '80%',
   },
   textInput: {
     height: 40,
