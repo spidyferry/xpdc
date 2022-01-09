@@ -64,7 +64,7 @@ const Login = ({navigation}) => {
               </View>
               <Text
                 style={[styles.marginedText, Theme.hyperlink]}
-                onPress={() => navigation.navigate('Home')}>
+                onPress={() => navigation.navigate('ForgotPassword')}>
                 Lupa kata sandi?
               </Text>
               <Text style={[Theme.textWhite, styles.margin40]}>

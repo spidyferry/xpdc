@@ -7,6 +7,9 @@ const Theme = StyleSheet.create({
   center: {
     alignItems: 'center',
   },
+  left: {
+    textAlign: 'left',
+  },
   midle: {
     justifyContent: 'center',
   },

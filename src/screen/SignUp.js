@@ -86,49 +86,23 @@ const SignUp = () => {
   );
 
   function enableButtona(a) {
-    if (a.length > 0) {
-      nama = true;
-    } else {
-      nama = false;
-    }
-    if (nama === true && telp === true && email === true && pass === true) {
-      setDisableButton(false);
-    } else {
-      setDisableButton(true);
-    }
+    a.length > 0 ? (nama = true) : (nama = false);
+    enableButton();
   }
   function enableButtonb(b) {
-    if (b.length > 0) {
-      telp = true;
-    } else {
-      telp = false;
-    }
-    if (nama === true && telp === true && email === true && pass === true) {
-      setDisableButton(false);
-    } else {
-      setDisableButton(true);
-    }
+    b.length > 0 ? (telp = true) : (telp = false);
+    enableButton();
   }
   function enableButtonc(c) {
-    if (c.length > 0) {
-      email = true;
-    } else {
-      email = false;
-    }
-
-    if (nama === true && telp === true && email === true && pass === true) {
-      setDisableButton(false);
-    } else {
-      setDisableButton(true);
-    }
+    c.length > 0 ? (email = true) : (email = false);
+    enableButton();
   }
   function enableButtond(d) {
-    if (d.length > 0) {
-      pass = true;
-    } else {
-      pass = false;
-    }
+    d.length > 0 ? (pass = true) : (pass = false);
+    enableButton();
+  }
 
+  function enableButton() {
     if (nama === true && telp === true && email === true && pass === true) {
       setDisableButton(false);
     } else {
