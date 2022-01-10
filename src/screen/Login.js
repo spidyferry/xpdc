@@ -5,7 +5,7 @@ import {
   Text,
   ImageBackground,
   Image,
-  Alert,
+  // Alert,
   TouchableOpacity,
   TextInput,
 } from 'react-native';
@@ -58,7 +58,7 @@ const Login = ({navigation}) => {
               <View>
                 <TouchableOpacity
                   style={Theme.defaultButton}
-                  onPress={() => Alert.alert('Pressed')}>
+                  onPress={() => navigation.navigate('Main')}>
                   <Text style={Theme.defaultTextButton}>Masuk</Text>
                 </TouchableOpacity>
               </View>
