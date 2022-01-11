@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 const PriceCheck = () => {
   return (
     <View>
-      <Text>Sapi</Text>
+      <Text>Price Check</Text>
     </View>
   );
 };

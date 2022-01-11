@@ -4,18 +4,75 @@ const Theme = StyleSheet.create({
   displayFlex: {
     flex: 1,
   },
+  paddingRight10: {
+    paddingRight: 10,
+  },
   center: {
     alignItems: 'center',
   },
-  smallNote: {
-    fontSize: 12,
+  alignRight: {
+    alignItems: 'flex-end',
+  },
+  alignLeft: {
+    alignItems: 'flex-start',
+  },
+  row: {
+    flexDirection: 'row',
+  },
+  fullWidth: {
+    width: '100%',
   },
   midle: {
     justifyContent: 'center',
   },
+  bold: {
+    fontWeight: 'bold',
+  },
+  subTitle: {
+    fontSize: 18,
+  },
+  smallNote: {
+    fontSize: 12,
+  },
+  cardHolder: {
+    backgroundColor: 'transparent',
+    opacity: 1,
+    flexDirection: 'row',
+    height: 50,
+    width: '100%',
+    marginBottom: 10,
+    borderBottomColor: '#dfdfdf',
+    borderBottomWidth: 1,
+  },
+  cardLeftIcon: {
+    flex: 2,
+    alignItems: 'flex-end',
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 50,
+    paddingLeft: 10,
+  },
+  cardRightIcon: {
+    flex: 2,
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 50,
+  },
+  cardContent: {
+    flex: 10,
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 50,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
   mainLogo: {
     width: PixelRatio.getPixelSizeForLayoutSize(101),
     height: PixelRatio.getPixelSizeForLayoutSize(33),
+  },
+  logo: {
+    width: PixelRatio.getPixelSizeForLayoutSize(46),
+    height: PixelRatio.getPixelSizeForLayoutSize(15),
   },
   loginPageHeader: {
     flex: 7,
@@ -41,6 +98,15 @@ const Theme = StyleSheet.create({
     flex: 8,
   },
   signUpPageFooter: {
+    flex: 1,
+  },
+  pageHeader: {
+    flex: 4,
+  },
+  pageBody: {
+    flex: 10,
+  },
+  pageFooter: {
     flex: 1,
   },
   textInputContainer: {
@@ -72,9 +138,29 @@ const Theme = StyleSheet.create({
     flex: 1,
   },
   navigationBar: {
-    backgroundColor: 'skyblue',
-    height: 100,
-    width: '100%',
+    height: 58,
+    width: '85%',
+  },
+  navigationBarLeft: {
+    flex: 6,
+    height: 58,
+  },
+  navigationBarRight: {
+    flex: 4,
+    height: 58,
+  },
+  subNavigationBar: {
+    height: 42,
+    width: '85%',
+  },
+  barColor: {
+    backgroundColor: '#282828',
+  },
+  searchBar: {
+    height: 40,
+  },
+  searchBarText: {
+    fontSize: 14,
   },
   defaultButton: {
     backgroundColor: '#ffcc33',
@@ -114,6 +200,9 @@ const Theme = StyleSheet.create({
   },
   marginTop40: {
     marginTop: 40,
+  },
+  marginTop20: {
+    marginTop: 20,
   },
 });
 

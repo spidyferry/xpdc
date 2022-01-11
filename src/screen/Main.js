@@ -1,4 +1,5 @@
 import React from 'react';
+import Theme from '../../style/Theme';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from './Home';
@@ -11,7 +12,11 @@ const Tab = createMaterialBottomTabNavigator();
 
 function Main({navigation}) {
   return (
-    <Tab.Navigator initialRouteName="Home" activeColor="white">
+    <Tab.Navigator
+      initialRouteName="Home"
+      activeColor="#ffcc33"
+      inactiveColor="#5f5f5f"
+      barStyle={Theme.barColor}>
       <Tab.Screen
         name="Home"
         component={Home}
@@ -50,7 +55,7 @@ function Main({navigation}) {
         name="PriceCheck"
         component={PriceCheck}
         options={{
-          tabBarLabel: 'Order',
+          tabBarLabel: 'Cek Ongkir',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons
               name="calculator-variant"
@@ -64,7 +69,7 @@ function Main({navigation}) {
         name="Profile"
         component={Profile}
         options={{
-          tabBarLabel: 'Order',
+          tabBarLabel: 'Profil',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="account" color={color} size={26} />
           ),

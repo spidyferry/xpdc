@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 const MyOrder = () => {
   return (
     <View>
-      <Text>Sapi</Text>
+      <Text>My Order</Text>
     </View>
   );
 };
