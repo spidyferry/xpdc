@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, Text, Alert, Pressable} from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 import Theme from '../../style/Theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useNavigation} from '@react-navigation/native';
 
 const CellMenu = props => {
   const navigation = useNavigation();
-  var navigate = props.navigateTo;
+  var nav = props.navigateTo;
   return (
-    <Pressable onPress={() => navigation.push(navigate)}>
+    <Pressable onPress={() => navigation.navigate(nav)}>
       <View style={Theme.cardHolder}>
         <View style={[Theme.cardLeftIcon, Theme.midle]}>
           <Icon name={props.icon} size={25} />

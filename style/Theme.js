@@ -106,6 +106,9 @@ const Theme = StyleSheet.create({
   pageBody: {
     flex: 10,
   },
+  safeWidth: {
+    width: '85%',
+  },
   pageFooter: {
     flex: 1,
   },

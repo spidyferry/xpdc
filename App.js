@@ -8,6 +8,7 @@ import ForgotPassword from './src/screen/ForgotPassword';
 import TermCondition from './src/screen/TermCondition';
 import Privacy from './src/screen/Privacy';
 import Cookies from './src/screen/Cookies';
+import ProfileSetting from './src/screen/ProfileSetting';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,11 +26,36 @@ const App = () => {
           component={Main}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-        <Stack.Screen name="TermCondition" component={TermCondition} />
-        <Stack.Screen name="Privacy" component={Privacy} />
-        <Stack.Screen name="Cookies" component={Cookies} />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUp}
+          options={{title: 'Pendaftaran Akun'}}
+        />
+        <Stack.Screen
+          name="ForgotPassword"
+          component={ForgotPassword}
+          options={{title: 'Lupa Kata Sandi'}}
+        />
+        <Stack.Screen
+          name="TermCondition"
+          component={TermCondition}
+          options={{title: 'Syarat dan Ketentuan Pengiriman'}}
+        />
+        <Stack.Screen
+          name="Privacy"
+          component={Privacy}
+          options={{title: 'Kebijakan Privacy'}}
+        />
+        <Stack.Screen
+          name="Cookies"
+          component={Cookies}
+          options={{title: 'Kebijakan Cookie'}}
+        />
+        <Stack.Screen
+          name="ProfileSetting"
+          component={ProfileSetting}
+          options={{title: 'Pengaturan Akun'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

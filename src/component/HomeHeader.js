@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, Alert, Pressable, Image} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import Theme from '../../style/Theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Searchbar} from 'react-native-paper';
@@ -22,7 +22,6 @@ const HomeHeader = props => {
           <Image source={logo} style={Theme.logo} />
         </View>
         <View style={[Theme.row, Theme.navigationBarRight]}>
-          <View style={[Theme.displayFlex]} />
           <View style={[Theme.displayFlex]} />
           <View
             style={[

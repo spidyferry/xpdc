@@ -17,7 +17,7 @@ const Profile = ({navigation}) => {
         <ProfileHeader name="Ferry Sugianto" email="1988ferry@gmail.com" />
       </View>
       <View style={[Theme.pageBody, Theme.center, Theme.marginTop40]}>
-        <CellMenu icon="account" title="Akun" />
+        <CellMenu icon="account" title="Akun" navigateTo="ProfileSetting" />
         <CellMenu icon="map-marker" title="Alamat" />
         <CellMenu
           icon="email-send"
@@ -34,7 +34,7 @@ const Profile = ({navigation}) => {
           title="Kebijakan Cookie"
           navigateTo="Cookies"
         />
-        <CellMenu icon="logout" title="Keluar" />
+        <CellMenu icon="logout" title="Keluar" navigateTo="Login" />
       </View>
       <View style={[Theme.pageFooter, Theme.center]} />
     </View>
