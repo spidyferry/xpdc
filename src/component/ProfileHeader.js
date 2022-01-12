@@ -8,7 +8,7 @@ const ProfileHeader = props => {
     <View style={Theme.center}>
       <Icon name="account-circle" size={100} />
       <Text style={[Theme.subTitle, Theme.bold]}>{props.name}</Text>
-      <Text style={Theme.subTitle}>{props.email}</Text>
+      <Text style={Theme.subTitle2}>{props.email}</Text>
     </View>
   );
 };

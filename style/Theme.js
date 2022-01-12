@@ -29,12 +29,17 @@ const Theme = StyleSheet.create({
     fontWeight: 'bold',
   },
   subTitle: {
-    fontSize: 18,
+    fontSize: 20,
+    marginBottom: 5,
+  },
+  subTitle2: {
+    fontSize: 16,
+    marginBottom: 3,
   },
   smallNote: {
     fontSize: 12,
   },
-  cardHolder: {
+  cellMenuHolder: {
     backgroundColor: 'transparent',
     opacity: 1,
     flexDirection: 'row',
@@ -44,7 +49,7 @@ const Theme = StyleSheet.create({
     borderBottomColor: '#dfdfdf',
     borderBottomWidth: 1,
   },
-  cardLeftIcon: {
+  cellMenuLeftIcon: {
     flex: 2,
     alignItems: 'flex-end',
     backgroundColor: 'transparent',
@@ -52,17 +57,49 @@ const Theme = StyleSheet.create({
     height: 50,
     paddingLeft: 10,
   },
-  cardRightIcon: {
+  cellMenuRightIcon: {
     flex: 2,
     backgroundColor: 'transparent',
     opacity: 1,
     height: 50,
   },
-  cardContent: {
+  cellMenuContent: {
     flex: 10,
     backgroundColor: 'transparent',
     opacity: 1,
     height: 50,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  cellMenuHolderBig: {
+    backgroundColor: 'transparent',
+    opacity: 1,
+    flexDirection: 'row',
+    height: 70,
+    width: '100%',
+    marginBottom: 10,
+    borderBottomColor: '#dfdfdf',
+    borderBottomWidth: 1,
+  },
+  cellMenuLeftIconBig: {
+    flex: 2,
+    alignItems: 'flex-end',
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 70,
+    paddingLeft: 10,
+  },
+  cellMenuRightIconBig: {
+    flex: 2,
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 70,
+  },
+  cellMenuContentBig: {
+    flex: 10,
+    backgroundColor: 'transparent',
+    opacity: 1,
+    height: 70,
     paddingLeft: 10,
     paddingRight: 10,
   },

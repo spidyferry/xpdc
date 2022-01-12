@@ -4,19 +4,20 @@ import Theme from '../../style/Theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useNavigation} from '@react-navigation/native';
 
-const CellMenu = props => {
+const CellMenuDoubleLine = props => {
   const navigation = useNavigation();
   var nav = props.navigateTo;
   return (
     <Pressable onPress={() => navigation.navigate(nav)}>
-      <View style={Theme.cellMenuHolder}>
-        <View style={[Theme.cellMenuLeftIcon, Theme.midle]}>
+      <View style={Theme.cellMenuHolderBig}>
+        <View style={[Theme.cellMenuLeftIconBig, Theme.midle]}>
           <Icon name={props.icon} size={25} />
         </View>
-        <View style={[Theme.cellMenuContent, Theme.midle]}>
-          <Text style={Theme.bold}>{props.title}</Text>
+        <View style={[Theme.cellMenuContentBig, Theme.midle]}>
+          <Text style={[Theme.bold]}>{props.title}</Text>
+          <Text>{props.detail}</Text>
         </View>
-        <View style={[Theme.cellMenuRightIcon, Theme.midle]}>
+        <View style={[Theme.cellMenuRightIconBig, Theme.midle]}>
           <Icon name="chevron-right" size={25} />
         </View>
       </View>
@@ -24,4 +25,4 @@ const CellMenu = props => {
   );
 };
 
-export default CellMenu;
+export default CellMenuDoubleLine;
