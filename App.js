@@ -9,6 +9,9 @@ import TermCondition from './src/screen/TermCondition';
 import Privacy from './src/screen/Privacy';
 import Cookies from './src/screen/Cookies';
 import ProfileSetting from './src/screen/ProfileSetting';
+import ChangeName from './src/screen/ChangeName';
+import ChangePhone from './src/screen/ChangePhone';
+import ChangeEmail from './src/screen/ChangeEmail';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +58,21 @@ const App = () => {
           name="ProfileSetting"
           component={ProfileSetting}
           options={{title: 'Pengaturan Akun'}}
+        />
+        <Stack.Screen
+          name="ChangeName"
+          component={ChangeName}
+          options={{title: 'Ubah Nama Pengguna'}}
+        />
+        <Stack.Screen
+          name="ChangePhone"
+          component={ChangePhone}
+          options={{title: 'Ubah Nomor Telepon'}}
+        />
+        <Stack.Screen
+          name="ChangeEmail"
+          component={ChangeEmail}
+          options={{title: 'Ubah Email'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -144,7 +144,7 @@ const Theme = StyleSheet.create({
     flex: 10,
   },
   safeWidth: {
-    width: '85%',
+    width: '80%',
   },
   pageFooter: {
     flex: 1,
@@ -179,7 +179,7 @@ const Theme = StyleSheet.create({
   },
   navigationBar: {
     height: 58,
-    width: '85%',
+    width: '80%',
   },
   navigationBarLeft: {
     flex: 6,
@@ -191,7 +191,7 @@ const Theme = StyleSheet.create({
   },
   subNavigationBar: {
     height: 42,
-    width: '85%',
+    width: '80%',
   },
   barColor: {
     backgroundColor: '#282828',
@@ -205,7 +205,7 @@ const Theme = StyleSheet.create({
   defaultButton: {
     backgroundColor: '#ffcc33',
     width: PixelRatio.getPixelSizeForLayoutSize(80),
-    height: PixelRatio.getPixelSizeForLayoutSize(20),
+    height: PixelRatio.getPixelSizeForLayoutSize(18),
     margin: 10,
     borderRadius: 10,
     justifyContent: 'center',
@@ -214,13 +214,13 @@ const Theme = StyleSheet.create({
   defaultTextButton: {
     alignItems: 'center',
     color: 'black',
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
   },
   defaultButtonDisable: {
     backgroundColor: '#cfcfcf',
     width: PixelRatio.getPixelSizeForLayoutSize(80),
-    height: PixelRatio.getPixelSizeForLayoutSize(20),
+    height: PixelRatio.getPixelSizeForLayoutSize(18),
     margin: 10,
     borderRadius: 10,
     justifyContent: 'center',
@@ -229,7 +229,7 @@ const Theme = StyleSheet.create({
   defaultTextButtonDisable: {
     alignItems: 'center',
     color: '#afafaf',
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
   },
   hyperlink: {

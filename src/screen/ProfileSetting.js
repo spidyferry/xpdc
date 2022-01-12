@@ -11,18 +11,25 @@ const ProfileSetting = ({navigation}) => {
         icon="shield-account"
         title="Nama"
         detail="Ferry Sugianto"
+        navigateTo="ChangeName"
       />
       <CellMenuDoubleLine
         icon="shield-account"
         title="Nomor Telepon"
         detail="089668273333"
+        navigateTo="ChangePhone"
       />
       <CellMenuDoubleLine
         icon="shield-account"
         title="E-Mail"
         detail="1988ferry@gmail.com"
+        navigateTo="ChangeEmail"
       />
-      <CellMenu icon="shield-account" title="Password" />
+      <CellMenu
+        icon="shield-account"
+        title="Password"
+        navigateTo="ChangePassword"
+      />
     </View>
   );
 };
