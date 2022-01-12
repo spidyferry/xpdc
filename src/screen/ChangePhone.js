@@ -9,7 +9,10 @@ const ChangePhone = () => {
         <Text style={Theme.bold}>Nomor Telepon</Text>
       </View>
       <View style={Theme.textInputContainer}>
-        <TextInput style={Theme.textInput} placeholder="089327393333" />
+        <TextInput
+          style={[Theme.textInput, Theme.marginLeft10]}
+          placeholder="089327393333"
+        />
       </View>
       <View style={Theme.marginTop40}>
         <TouchableOpacity style={Theme.defaultButton}>

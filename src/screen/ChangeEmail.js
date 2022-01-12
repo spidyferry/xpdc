@@ -9,7 +9,10 @@ const ChangeEmail = () => {
         <Text style={Theme.bold}>E-Mail Terdaftar</Text>
       </View>
       <View style={Theme.textInputContainer}>
-        <TextInput style={Theme.textInput} placeholder="1988ferry@gmail.com" />
+        <TextInput
+          style={[Theme.textInput, Theme.marginLeft10]}
+          placeholder="1988ferry@gmail.com"
+        />
       </View>
       <View style={Theme.marginTop40}>
         <TouchableOpacity style={Theme.defaultButton}>

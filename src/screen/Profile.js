@@ -18,7 +18,7 @@ const Profile = ({navigation}) => {
       </View>
       <View style={[Theme.pageBody, Theme.center, Theme.marginTop40]}>
         <CellMenu icon="account" title="Akun" navigateTo="ProfileSetting" />
-        <CellMenu icon="map-marker" title="Alamat" />
+        <CellMenu icon="map-marker" title="Alamat" navigateTo="Address" />
         <CellMenu
           icon="email-send"
           title="Syarat dan Ketentuan Pengiriman"

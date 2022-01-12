@@ -9,7 +9,10 @@ const ChangeName = () => {
         <Text style={Theme.bold}>Nama Pengguna</Text>
       </View>
       <View style={Theme.textInputContainer}>
-        <TextInput style={Theme.textInput} placeholder="Ferry Sugianto" />
+        <TextInput
+          style={[Theme.textInput, Theme.marginLeft10]}
+          placeholder="Ferry Sugianto"
+        />
       </View>
       <View style={Theme.marginTop40}>
         <TouchableOpacity style={Theme.defaultButton}>

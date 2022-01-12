@@ -28,6 +28,12 @@ const Theme = StyleSheet.create({
   bold: {
     fontWeight: 'bold',
   },
+  marginLeft10: {
+    marginLeft: 10,
+  },
+  marginRight10: {
+    marginLeft: 10,
+  },
   subTitle: {
     fontSize: 20,
     marginBottom: 5,

@@ -12,6 +12,8 @@ import ProfileSetting from './src/screen/ProfileSetting';
 import ChangeName from './src/screen/ChangeName';
 import ChangePhone from './src/screen/ChangePhone';
 import ChangeEmail from './src/screen/ChangeEmail';
+import ChangePassword from './src/screen/ChangePassword';
+import Address from './src/screen/Address';
 
 const Stack = createNativeStackNavigator();
 
@@ -73,6 +75,17 @@ const App = () => {
           name="ChangeEmail"
           component={ChangeEmail}
           options={{title: 'Ubah Email'}}
+        />
+        <Stack.Screen
+          name="ChangePassword"
+          component={ChangePassword}
+          options={{title: 'Ubah Kata Sandi'}}
+        />
+
+        <Stack.Screen
+          name="Address"
+          component={Address}
+          options={{title: 'Alamat'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
