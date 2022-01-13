@@ -16,13 +16,13 @@ const HomeHeader = props => {
           Theme.navigationBar,
           Theme.midle,
           Theme.row,
-          Theme.marginTop20,
+          Theme.marginTop10,
         ]}>
         <View style={[Theme.navigationBarLeft, Theme.midle]}>
           <Image source={logo} style={Theme.logo} />
         </View>
         <View style={[Theme.row, Theme.navigationBarRight]}>
-          <View style={[Theme.displayFlex]} />
+          <View style={Theme.displayFlex} />
           <View
             style={[
               Theme.displayFlex,
@@ -50,7 +50,7 @@ const HomeHeader = props => {
           XPDC!
         </Text>
       </View>
-      <View style={[Theme.subNavigationBar]}>
+      <View style={Theme.subNavigationBar}>
         <Searchbar
           placeholder="Cek Resi"
           style={Theme.searchBar}

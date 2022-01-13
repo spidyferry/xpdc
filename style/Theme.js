@@ -22,6 +22,9 @@ const Theme = StyleSheet.create({
   fullWidth: {
     width: '100%',
   },
+  fullHeight: {
+    height: '100%',
+  },
   midle: {
     justifyContent: 'center',
   },
@@ -44,6 +47,39 @@ const Theme = StyleSheet.create({
   },
   smallNote: {
     fontSize: 12,
+  },
+  bannerCard: {
+    height: 150,
+    backgroundColor: '#dfdfdf',
+    borderRadius: 10,
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  nearestAgentCardHolder: {
+    flexDirection: 'row',
+    width: 270,
+    height: 70,
+    borderRadius: 10,
+    marginRight: 10,
+    marginLeft: 10,
+    borderColor: '#dfdfdf',
+    borderWidth: 1,
+  },
+  nearestAgentCardIcon: {
+    width: 60,
+    height: 70,
+  },
+  nearestAgentCardContent: {
+    width: 210,
+    height: 70,
+  },
+  bigMenuButton: {
+    backgroundColor: '#ffbb00',
+    height: 90,
+    width: 100,
+    borderRadius: 10,
+    marginLeft: 5,
+    marginRight: 5,
   },
   cellMenuHolder: {
     backgroundColor: 'transparent',
@@ -144,10 +180,10 @@ const Theme = StyleSheet.create({
     flex: 1,
   },
   pageHeader: {
-    flex: 4,
+    flex: 3,
   },
   pageBody: {
-    flex: 10,
+    flex: 11,
   },
   safeWidth: {
     width: '80%',
@@ -204,12 +240,14 @@ const Theme = StyleSheet.create({
   },
   searchBar: {
     height: 40,
+    elevation: 0,
+    borderRadius: 10,
   },
   searchBarText: {
     fontSize: 14,
   },
   defaultButton: {
-    backgroundColor: '#ffcc33',
+    backgroundColor: '#ffbb00',
     width: PixelRatio.getPixelSizeForLayoutSize(80),
     height: PixelRatio.getPixelSizeForLayoutSize(18),
     margin: 10,
@@ -244,11 +282,17 @@ const Theme = StyleSheet.create({
   textWhite: {
     color: 'white',
   },
+  textCenter: {
+    textAlign: 'center',
+  },
   marginTop40: {
     marginTop: 40,
   },
   marginTop20: {
     marginTop: 20,
+  },
+  marginTop10: {
+    marginTop: 10,
   },
 });
 
