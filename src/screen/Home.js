@@ -9,6 +9,7 @@ import NearestAgentCard from '../component/NearestAgentCard';
 const Home = () => {
   return (
     <View style={Theme.displayFlex}>
+      <View style={[Theme.headerBG, Theme.fullWidth]} />
       <View style={[Theme.pageHeader, Theme.center]}>
         <HomeHeader userName="Ferry Sugianto" />
       </View>

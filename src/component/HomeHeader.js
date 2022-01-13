@@ -4,13 +4,14 @@ import Theme from '../../style/Theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Searchbar} from 'react-native-paper';
 
-const logo = require('../../assets/img/logo-fix-black.png');
+const logo = require('../../assets/img/logo-fix-white.png');
 
 const HomeHeader = props => {
   const [searchQuery, setSearchQuery] = useState('');
   const onChangeSearch = query => setSearchQuery(query);
   return (
     <View style={[Theme.center, Theme.fullWidth]}>
+      <View style={[Theme.barColor, Theme.sendToBack, Theme.fullWidth]} />
       <View
         style={[
           Theme.navigationBar,

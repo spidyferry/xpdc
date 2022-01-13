@@ -4,6 +4,20 @@ const Theme = StyleSheet.create({
   displayFlex: {
     flex: 1,
   },
+  sendToBack: {
+    elevation: 0,
+    position: 'absolute',
+    height: 70,
+    backgroundColor: '#eba50c',
+  },
+  headerBG: {
+    elevation: 0,
+    height: 220,
+    position: 'absolute',
+    backgroundColor: '#dfdfdf',
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+  },
   paddingRight10: {
     paddingRight: 10,
   },
@@ -50,7 +64,7 @@ const Theme = StyleSheet.create({
   },
   bannerCard: {
     height: 150,
-    backgroundColor: '#dfdfdf',
+    backgroundColor: '#cfcfcf',
     borderRadius: 10,
     marginLeft: 10,
     marginRight: 10,
@@ -74,7 +88,7 @@ const Theme = StyleSheet.create({
     height: 70,
   },
   bigMenuButton: {
-    backgroundColor: '#ffbb00',
+    backgroundColor: '#628a0b',
     height: 90,
     width: 100,
     borderRadius: 10,
