@@ -41,7 +41,7 @@ function Main({navigation}) {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="NewOrder"
         component={NewOrder}
         options={{
@@ -50,12 +50,12 @@ function Main({navigation}) {
             <MaterialCommunityIcons name="truck" color={color} size={26} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="PriceCheck"
         component={PriceCheck}
         options={{
-          tabBarLabel: 'Cek Ongkir',
+          tabBarLabel: 'Cek Tarif',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons
               name="calculator-variant"

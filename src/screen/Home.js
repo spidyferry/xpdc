@@ -57,7 +57,7 @@ const Home = () => {
             />
           </ScrollView>
         </View>
-        <View style={[Theme.marginTop20, Theme.center]}>
+        <View style={[Theme.marginTop10, Theme.center]}>
           <View style={Theme.safeWidth}>
             <Text style={Theme.bold}>Pilih Layanan Kami</Text>
           </View>

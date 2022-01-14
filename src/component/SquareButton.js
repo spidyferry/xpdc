@@ -11,14 +11,8 @@ const SquareButton = props => {
     <Pressable onPress={() => navigation.navigate(nav)}>
       <View style={[Theme.bigMenuButton, Theme.midle]}>
         <View style={Theme.center}>
-          <Icon name={props.icon} size={40} style={Theme.textWhite} />
-          <Text
-            style={[
-              Theme.bold,
-              Theme.textWhite,
-              Theme.textCenter,
-              Theme.smallNote,
-            ]}>
+          <Icon name={props.icon} size={40} />
+          <Text style={[Theme.bold, Theme.textCenter, Theme.smallNote]}>
             {props.title}
           </Text>
         </View>
