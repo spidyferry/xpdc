@@ -98,20 +98,20 @@ const PriceCheck = () => {
         <View>
           {hasInsurance ? (
             <View style={Theme.textInputContainer}>
+              <View style={Theme.textInputIcon}>
+                <Text style={Theme.bold}>Rp</Text>
+              </View>
               <TextInput
                 style={Theme.textInputDoubleIcon}
-                placeholder="Berat Barang"
+                placeholder="Harga Barang"
               />
-              <View style={Theme.textInputIcon}>
-                <Text style={Theme.bold}>Kg</Text>
-              </View>
             </View>
           ) : null}
         </View>
 
         <View>
           <TouchableOpacity style={[Theme.defaultButton, Theme.marginTop40s]}>
-            <Text style={Theme.defaultTextButton}>Masuk</Text>
+            <Text style={Theme.defaultTextButton}>Hitung</Text>
           </TouchableOpacity>
         </View>
       </View>

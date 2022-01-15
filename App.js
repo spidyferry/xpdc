@@ -14,6 +14,7 @@ import ChangePhone from './src/screen/ChangePhone';
 import ChangeEmail from './src/screen/ChangeEmail';
 import ChangePassword from './src/screen/ChangePassword';
 import Address from './src/screen/Address';
+import NewOrder from './src/screen/NewOrder';
 
 const Stack = createNativeStackNavigator();
 
@@ -81,11 +82,15 @@ const App = () => {
           component={ChangePassword}
           options={{title: 'Ubah Kata Sandi'}}
         />
-
         <Stack.Screen
           name="Address"
           component={Address}
           options={{title: 'Alamat'}}
+        />
+        <Stack.Screen
+          name="NewOrder"
+          component={NewOrder}
+          options={{title: 'Pesan Layanan'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

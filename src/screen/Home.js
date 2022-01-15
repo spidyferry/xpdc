@@ -70,7 +70,11 @@ const Home = () => {
             Theme.midle,
             Theme.marginTop10,
           ]}>
-          <SquareButton icon="airplane" title="Kargo Udara" />
+          <SquareButton
+            icon="airplane"
+            title="Kargo Udara"
+            navigateTo="NewOrder"
+          />
           <SquareButton icon="ferry" title="Kargo Laut" />
           <SquareButton icon="truck" title="Kargo Darat" />
         </View>
