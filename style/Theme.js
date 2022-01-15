@@ -288,6 +288,9 @@ const Theme = StyleSheet.create({
   barColor: {
     backgroundColor: '#282828',
   },
+  barYellow: {
+    backgroundColor: '#fcbf3a',
+  },
   searchBar: {
     height: 40,
     // elevation: 0,
